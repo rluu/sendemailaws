@@ -36,7 +36,8 @@ To run the software:
 cd sendemailaws
 source venv/bin/activate
 
-python3 src/main.py --from="ryanluu@gmail.com" --to="ryanluu@gmail.com"
+cd src
+python3 main.py --from="source.addr@gmail.com" --to="dest.addr@gmail.com"
 ```
 
 ## Dependencies

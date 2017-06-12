@@ -8,7 +8,7 @@
 #
 #     python3 main.py --help
 #     python3 main.py --version
-#     python3 main.py --from="ryanluu@gmail.com" --to="ryanluu@gmail.com"
+#     python3 main.py --from="source.addr@gmail.com" --to="dest.addr@gmail.com"
 #
 # Note:
 #     This application assumes that the AWS credentials and configuration
@@ -127,14 +127,10 @@ def sendEmail():
                     },
                 'Html': {
                     'Data': emailBodyHtml,
-                    'Charset': 'string'
+                    'Charset': 'UTF-8'
                     }
                 }
             },
-        ReplyToAddresses=[],
-        ReturnPath='',
-        ReturnPathArn='',
-        SourceArn='',
         Source=fromEmailAddress,
         )
     
